@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 07 - Javascript Kitchen Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="d-flex align-items-center full-height">
+        <div class="container border border-primary border-5 p-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="mb-5">
+                    <h1><strong>Kitchen Calculator t(-_-t)</strong></h1>
+                </div>
+                <div class="col-12 col-sm-9 order-2 order-sm-1">
+                    <form id="kitchenCalculator" class="border-1">
+                        <div class="mb-3 d-sm-flex align-items-center">
+                            <label for="productType" class="form-label col-sm-4">Select your product type:</label>
+                            <select class="form-select product-type" aria-label="Select your product type"
+                                id="productType" required>
+                                <option value="">--Select Your Product--</option>
+                                <option value="base-cabinets">Base Cabinets</option>
+                                <option value="wall-cabinets">Wall Cabinets</option>
+                                <option value="counter-tops">Counter Tops</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 d-sm-flex align-items-center">
+                            <div class="col-sm-4">
+                                <label class="form-label">Select the product line:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="productLine" id="empireStandard"
+                                        value="empire-standard" checked>
+                                    <label class="form-check-label" for="empireStandard">Empire Standard</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="productLine" id="kitchenElite"
+                                        value="kitchen-elite">
+                                    <label class="form-check-label" for="kitchenElite">Kitchen Elite</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="productLine" id="goldStarPlus"
+                                        value="gold-star-plus">
+                                    <label class="form-check-label" for="goldStarPlus">Gold Star Plus</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-sm-flex align-items-center">
+                            <label for="linearFootage" class="form-label col-sm-4">Enter the linear footage:</label>
+                            <input type="number" class="form-control" id="linearFootage"
+                                aria-describedby="linearFootage" required min="3" max="50">
+
+                        </div>
+                        <div class="mb-3 d-sm-flex align-items-center corner-units">
+                            <label for="cornerUnits" class="form-label col-sm-4">If cabinets, how many corner
+                                units?</label>
+                            <input type="number" class="form-control" id="cornerUnits" aria-describedby="cornerUnits"
+                                min="0" max="5">
+                        </div>
+                        <div>
+                            <p class="text-center">Click the <input type="submit" class="btn btn-primary"
+                                    aria-label="Calculate" value="Calculate"> button</p>
+                        </div>
+                        <div class="mb-3 d-sm-flex align-items-center">
+                            <label for="totalResults" class="form-label col-sm-4">See the results:</label>
+                            <input type="text" class="form-control" id="totalResults" aria-describedby="totalResults">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-3 order-1 order-sm-2 image-holder">
+                    <img class="img-fluid img-change fade-in" src="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
