@@ -74,9 +74,6 @@ body {
         transform: translateX(1);
     }
 }
-.full-height {
-    height: 100vh;
-}
 .hidden {
     display: none !important;
 }
@@ -90,4 +87,9 @@ body {
 
 .fade-out {
     opacity: 0;
+}
+@media (min-width:481px) {
+    .full-height {
+        height: 100vh;
+    }
 }
